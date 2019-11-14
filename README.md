@@ -11,8 +11,13 @@ To build the docker image simply :
 make docker_build
 ```
 
-in the project directory
+in the project directory.
 
+Then host with :
+
+```bash
+docker run -p 8050:8050 tcga_data_explore
+```
 ## Local hosting
 
 To host dashboard locally without using docker :
