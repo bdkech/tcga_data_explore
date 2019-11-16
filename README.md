@@ -1,8 +1,15 @@
 # TCGA Data exploration tool
-
 This repo contains the necessary code to build a docker image or host a Plotly Dash dashboard to explore TCGA-derived BRCA and OV data.  This tool allows you to filter and select genes to then observe their foldchanges in mRNA, protein, and CNV data.  It also allows you to see how well these features correlate within samples, and how they contributed in successfully classifying samples in either groups.
 
 
+## Running from docker image (recommended)
+
+An image is available from DockerHub :
+
+```bash
+docker pull bdkech/analytical_tools:tcga_data_explore
+docker run -p 8050:8050 tcga_data_explore
+```
 ## Building docker image
 
 To build the docker image simply :
